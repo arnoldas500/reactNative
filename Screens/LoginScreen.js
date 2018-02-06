@@ -3,14 +3,14 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 
 class LoginScreen extends Component{
   render() {
-    return {
+    return (
       <View>
       <Text> This is the login screen </Text>
-      <Button onPress={ {} =>
-      this.props.navigation.navigate{'HomeScreen'}}
+      <Button onPress={ () =>
+      this.props.navigation.navigate('HomeScreen')}
       title="Go To The home screen" />
       </View>
-    };
+    );
   }
 }
 //need to export the class we created
